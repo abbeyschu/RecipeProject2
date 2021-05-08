@@ -1,0 +1,149 @@
+
+body {
+    background-image: linear-gradient(to bottom right,#f4fbfc , #f4fbfc, #f4fbfc, #B3DEE5);
+    text-align: left;
+    color: black;
+    background-color: transparent;
+}
+
+.card {
+    /* border-radius: 25px; */
+    font-family: 'Mandali', sans-serif;
+    font-size: 22px;
+    margin-left: 50px;
+    margin-top: 50px;
+        opacity: .5;
+        transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+        -o-transition: opacity .5s ease-out;
+        /* background: url(/img/cream_dust.png); */
+        box-shadow: 0 0 1em 1em ;
+        display: grid;
+        grid-gap:25px;
+        grid-template: auto/repeat(auto-fit, minmax(300px)1fr);
+    }
+    
+    .card:hover {
+        opacity: 1;
+    }
+  
+
+  .card-image {
+      height: auto;
+      width: auto;
+  }
+
+  .title {
+    font-family: 'Corben', Georgia, Times, serif;
+    text-shadow: 1px 1px 1px #ccc;
+  }
+
+  .subtitle {
+    font-family: 'Mandali', sans-serif;
+    font-size: 22px;
+  }
+
+  .hero-body {
+    background-image: linear-gradient(to top right,#A8763E , #E8A87C, #FFFFFF );
+    color: #FFFFFF;
+  }
+
+  .columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+
+  .title-1 {
+    color:#FFFFFF ;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+  }
+
+  #search-2 {
+    background-color:#FFA101 ;
+  }
+
+  .radio {
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+    background-size: auto;
+}
+
+.is-fullwidth {
+    background-color:#A8763E ;
+}
+
+#button {
+  color: #FFFFFF;
+}
+
+.modal-card p {
+  max-height: 40%;
+}
+
+.modal-card-head {
+background-color: #31525b;
+}
+
+.modal-card-title{
+  text-align: center;
+  color: #fae6b1;
+}
+
+.modal-card-body {
+  background-color: #b3dee5;
+} 
+
+.modal-card-body li {
+  font-size: 16pt;
+  font-weight: normal;
+}
+
+.modal-card-body p {
+  font-size: 16pt;
+  font-weight: normal;
+}
+
+
+/* .result-content{
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap:25px;
+  grid-template: auto/repeat(auto-fit, minmax(300px)1fr);
+} 
+
+.card.invisible{
+  display: none;
+}
+*/
+.view-btn{
+
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  padding: 10px 0;
+  background-color: #d1901f;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-left:50px;
+  border-radius: 4px;
+  align-self:flex-start;
+  width: 200px;
+  display: inline-block;
+}
+
