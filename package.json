@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/abbeyschu/RecipeProject2/issues"
   },
-  "homepage": "https://github.com/abbeyschu/RecipeProject2#readme"
+  "homepage": "https://github.com/abbeyschu/RecipeProject2#readme",
+  "dependencies": {
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
 }
