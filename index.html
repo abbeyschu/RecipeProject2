@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Assets/style.css">
+  <link rel="stylesheet" href="public/css/style.css">
 </head>
 
 <body>
@@ -18,9 +18,16 @@
     <div class="hero-body">
       <div class="columns">
         <div class="column is-7">
+          <span class="icon-text">
+            <span class="icon">
+              <i class="fas fa-home"></i>
+            </span>
+            <span>Username</span>
+          </span>
           <p class="title-1">Yummy Corner</p>
           <p class="subtitle"></p>
         </div>
+        
         <div class="control">
           <label class="radio">
             <input id="foodCheck" type="radio" name="foobar">
@@ -52,6 +59,34 @@
           </div>
 
         </div>
+      </div>
+      <div class="tabs is-toggle is-fullwidth">
+        <ul>
+          <li class="is-active">
+            <a>
+              
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              
+              <span>Signup</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              
+              <span>Contact</span>
+            </a>
+          </li>
+          <li>
+            <a>
+              
+              <span>Favorites</span>
+            </a>
+          </li>
+        </ul>
       </div>
   </section>
   <!-- Recipe list: should pop up when search button is clicked and display recipes -->
