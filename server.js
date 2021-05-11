@@ -33,5 +33,5 @@ app.listen(PORT, () => {
 
 //Landing page
 app.get ('/', (req, res)=>{
-    res.send ("Hello!!");
+    res.render ("main");
 })
