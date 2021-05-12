@@ -11,12 +11,17 @@ Project.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    label: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    comments: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
+    image: {
+      type: DataTypes.BLOB,
+      allowNull: false,
     },
     
     user_id: {
