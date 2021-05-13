@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Favorites extends Model {}
 
-Project.init(
+Favorites.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -31,14 +31,34 @@ Project.init(
         key: 'id',
       },
     },
+    label: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    idDrinkAPI: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    foodurl: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    comments: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    image: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'favorites',
   }
 );
 
-module.exports = Project;
+module.exports = Favorites;
