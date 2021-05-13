@@ -10,33 +10,35 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Assets/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <section class="hero is-primary is-bold">
+    <div id="navbarMenuHeroB" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="./login.html">
+          Log In
+        </a>
+        <a class="navbar-item" href="./signup.html">
+          Sign Up
+        </a>
+    
+      </div>
+    </div>
+    
     <div class="hero-body">
       <div class="columns">
-        <div class="column is-7">
+        <div class="column is-5">
           <p class="title-1">Yummy Corner</p>
-          <p class="subtitle"></p>
+      
         </div>
         <div class="control">
-            <!-- passport input form, will need to be added to main html page.  -->
 
-<form action="/login" method="post">
-    <div>
-        <label>Username:</label>
-        <input type="text" name="username"/>
-    </div>
-    <div>
-        <label>Password:</label>
-        <input type="password" name="password"/>
-    </div>
-    <div>
-        <input type="submit" value="Log In"/>
-    </div>
-</form>
+
+          
+
+
           <label class="radio">
             <input id="foodCheck" type="radio" name="foobar">
             <strong>Food</strong>
@@ -53,6 +55,8 @@
               <span class="icon is-left">
                 <i class="fas fa-search" aria-hidden="true"></i>
               </span>
+            
+        
             </div>
             <div class="control">
               <button class="button is-medium is-success" id="search-2">Search</button>
@@ -66,6 +70,7 @@
 
         </div>
       </div>
+    
   </section>
   <!-- Recipe list: should pop up when search button is clicked and display recipes -->
 
@@ -99,9 +104,9 @@
       </div>
     </div>
   </div>
-  <script src="Assets/script.js"></script>
-  <script src="Assets/foodScript.js"></script>
-  <script src="Assets/drinkScript.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/foodScript.js"></script>
+  <script src="../js/drinkScript.js"></script>
 
 </body>
 

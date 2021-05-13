@@ -1,2 +1,2 @@
 # RecipeProject2
-This project 
+Project 2 - Recipe Search 

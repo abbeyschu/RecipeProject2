@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Favorites } = require('../../models');
+const { Project } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
