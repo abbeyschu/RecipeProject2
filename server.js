@@ -1,17 +1,32 @@
 // Dependencies
 const path = require('path');
 const express = require('express');
-// const session = require('express-session');
+const session = require('express-session');
 const exphbs = require('express-handlebars');
 // const routes = require('./controllers');
 // const helpers = require('./utils/helpers');
 
 const sequelize = require('./config/connection');
-// const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // Sets up the Express App
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// Set up sessions with cookies
+const sess = {
+  secret: 'Super secret secret',
+    // Tells our session to use cookies
+
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize,
+  }),
+};
+
+app.use(session(sess));
 
 // Sets up the routes
 app.use (express.static(__dirname+"/public"));

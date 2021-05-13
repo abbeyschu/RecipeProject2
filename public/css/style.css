@@ -147,3 +147,11 @@ background-color: #31525b;
   display: inline-block;
 }
 
+p{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  text-align: center;
+  color: #fae6b1;
+}
