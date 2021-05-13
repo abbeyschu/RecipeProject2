@@ -131,6 +131,14 @@ function printDesc(resultObj){
     title.innerHTML = resultObj.strDrink;
     header.append(title);
 
+    var addFavorite = document.createElement('img');
+    addFavorite.setAttribute('src','../images/star.svg');
+    addFavorite.classList.add('favoritesIcon');
+    header.append(addFavorite);
+  
+
+
+
     var closeButton = document.createElement('button');
     closeButton.classList.add('modal-close');
     closeButton.setAttribute('aria-label','close');
