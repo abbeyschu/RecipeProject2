@@ -2,8 +2,6 @@ const router = require('express').Router();
 const { Favorites } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-
-
 // route to get all favorites
 router.get('/', withAuth, async (req, res) => {
     const favoritesData = await Favorites.findAll().catch((err) => { 
