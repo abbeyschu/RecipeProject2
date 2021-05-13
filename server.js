@@ -14,9 +14,9 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Sets up the routes
-app.use (express.static(__dirname+"/public"));
+app.use(express.static(__dirname+"/public"));
 app.use(express.json());
-app.use (express.urlencoded ({extended:true}));
+app.use(express.urlencoded ({extended:true}));
 
 // Handlebars setting
 app.set('view engine', 'hbs');
