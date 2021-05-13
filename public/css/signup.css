@@ -1,0 +1,13 @@
+
+
+   html {
+background-image: url('../images/background/bg1.jpeg');
+background-repeat:no-repeat;
+background-size: cover;
+height: 100%;
+
+   }
+
+   small {
+       text-align: justify;
+   }

@@ -1,13 +1,18 @@
 
-body {
-    background-image: linear-gradient(to bottom right,#f4fbfc , #f4fbfc, #f4fbfc, #B3DEE5);
-    text-align: left;
-    color: black;
-    background-color: transparent;
+
+
+html{
+  background-image: url('../images/background/bg7.jpg');
+background-repeat:no-repeat;
+background-size: cover;
+height: 100%;
+position:relative;
+width: 100%;
+
 }
 
 .card {
-    /* border-radius: 25px; */
+  
     font-family: 'Mandali', sans-serif;
     font-size: 22px;
     margin-left: 50px;
@@ -17,7 +22,7 @@ body {
         -moz-transition: opacity .5s ease-out;
         -webkit-transition: opacity .5s ease-out;
         -o-transition: opacity .5s ease-out;
-        /* background: url(/img/cream_dust.png); */
+      
         box-shadow: 0 0 1em 1em ;
         display: grid;
         grid-gap:25px;
@@ -44,10 +49,10 @@ body {
     font-size: 22px;
   }
 
-  .hero-body {
+  /* .hero-body {
     background-image: linear-gradient(to top right,#A8763E , #E8A87C, #FFFFFF );
     color: #FFFFFF;
-  }
+  } */
 
   .columns {
     display: flex;

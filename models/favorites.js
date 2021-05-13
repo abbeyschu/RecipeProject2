@@ -11,6 +11,19 @@ Favorites.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    label: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    comments: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    image: {
+      type: DataTypes.BLOB,
+      allowNull: false,
+    },
+    
     user_id: {
       type: DataTypes.INTEGER,
       references: {
