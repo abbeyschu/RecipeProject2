@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-// const routes = require('./controllers');
+const routes = require('./controllers');
 // const helpers = require('./utils/helpers');
 
 const sequelize = require('./config/connection');
@@ -32,6 +32,7 @@ app.use(session(sess));
 app.use(express.static(__dirname+"/public"));
 app.use(express.json());
 app.use(express.urlencoded ({extended:true}));
+app.use(routes);
 
 // Handlebars setting
 app.set('view engine', 'hbs');
@@ -42,9 +43,9 @@ app.engine('hbs', exphbs({
 }));
 
 //Landing page
-app.get ('/', (req, res)=>{
-    res.render ("main");
-})
+// app.get ('/', (req, res)=>{
+//     res.render ("main");
+// })
 
 // Starts the server to begin listening
 sequelize.sync({ force: false }).then(() => {
