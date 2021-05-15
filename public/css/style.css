@@ -99,7 +99,7 @@ width: 100%;
 }
 
 .modal-card-head {
-background-color: #31525b;
+  background-color: #31525b;
 }
 
 .modal-card-title{
@@ -119,6 +119,11 @@ background-color: #31525b;
 .modal-card-body p {
   font-size: 16pt;
   font-weight: normal;
+}
+
+.favoritesIcon {
+  width: 20px;
+  height: 20px;
 }
 
 
