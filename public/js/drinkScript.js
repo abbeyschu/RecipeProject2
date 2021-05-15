@@ -20,6 +20,11 @@ function printResults(resultObj) {
     imageFigure.classList.add('image', 'is-4by3');
     cardImage.append(imageFigure);
 
+    var addFavorite = document.createElement('img');
+    addFavorite.setAttribute('src','../images/star.svg');
+    addFavorite.classList.add('favoritesIcon');
+    cardImage.append(addFavorite);
+
     var image = document.createElement('img');
     image.src = resultObj.strDrinkThumb
     imageFigure.append(image);
@@ -130,14 +135,6 @@ function printDesc(resultObj){
     title.classList.add('modal-card-title','title', 'is-2');
     title.innerHTML = resultObj.strDrink;
     header.append(title);
-
-    var addFavorite = document.createElement('img');
-    addFavorite.setAttribute('src','../images/star.svg');
-    addFavorite.classList.add('favoritesIcon');
-    header.append(addFavorite);
-  
-
-
 
     var closeButton = document.createElement('button');
     closeButton.classList.add('modal-close');
