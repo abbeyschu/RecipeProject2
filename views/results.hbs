@@ -1,4 +1,19 @@
  <section class="hero is-primary is-bold">
+   <div id="navbarMenuHeroB" class="navbar-menu">
+      <div class="navbar-end">
+        {{#if logged_in}}
+        <a class="no-button">Log In</a>
+        {{else}}
+        <a class="navbar-item" href="./login.hbs">
+          Log In
+        </a>
+        {{/if}}
+        <a class="navbar-item" href="./signup.hbs">
+          Sign Up
+        </a>
+    
+      </div>
+    </div>
     <div class="hero-body">
       <div class="columns">
         <div class="column is-7">
