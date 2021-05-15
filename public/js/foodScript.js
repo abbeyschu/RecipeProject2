@@ -37,7 +37,7 @@ function generateCards(results) {
 <div class="card column is-one-quarter">
       <div class="card-image">
         <figure class="image is-4by3">
-        
+       
           <img src= "${result.recipe.image}" alt="Placeholder image">
         </figure>
       </div>
@@ -47,6 +47,7 @@ function generateCards(results) {
           </div>
           <div class="media-content">
             <p class="title is-4">${result.recipe.label}</p>
+            <img class="favoritesIcon" src="../images/star.svg"/>
           </div>
         </div>
     
