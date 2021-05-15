@@ -64,3 +64,11 @@ function generateCards(results) {
 })
 searchRecipe.innerHTML = generatedCards;
 };
+
+const searchButton = document.querySelector('#search-2');
+
+// activate search button
+searchButton.addEventListener("click", function(event){
+    event.preventDefault();
+    findApi(searchInput);
+});
