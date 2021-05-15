@@ -17,7 +17,8 @@ router.post('/', withAuth, async (req, res) => {
       const newFavorites = await Favorites.create({
         user_id: req.session.user_id,
         label: req.body.label,
-        idDrinkAPI: req.body.idDrinkAPI,
+        cuisineType: req.body.cuisineType,
+        calories: req.body.calories,
         foodurl: req.body.foodurl,
         comments: req.body.comments,
         image: req.body.image,

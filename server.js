@@ -33,6 +33,7 @@ app.use(express.static(__dirname+"/public"));
 app.use(express.json());
 app.use(express.urlencoded ({extended:true}));
 app.use(routes);
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Handlebars setting
 app.set('view engine', 'hbs');
