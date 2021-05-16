@@ -1,15 +1,12 @@
-const searchRecipe = document.querySelector('#card-append');
-const result = document.querySelector('#result-content');
-const apiKey = '9b2b77378f38c14b074813a97058067c';
-const appId = '61905fa6';
+const searchRecipe = document.querySelector("#card-append");
+const result = document.querySelector("#result-content");
+const apiKey = "9b2b77378f38c14b074813a97058067c";
+const appId = "61905fa6";
 const url = `https://api.edamam.com/search?q=${searchInput}&app_id=${appId}&app_key=${apiKey}&from=0&to=20`;
-var searchInput = '';
-
-
+var searchInput = "";
 
 function findApi(searchInput) {
-
-  searchInput = document.querySelector('#recipe-search-2').value;
+  searchInput = document.querySelector("#recipe-search-2").value;
 
   fetch(
     `https://api.edamam.com/search?q=${searchInput}&app_id=${appId}&app_key=${apiKey}&from=0&to=20`
@@ -18,22 +15,20 @@ function findApi(searchInput) {
     .then((data) => {
       console.log(data);
       //a function to pass the hits inside the data
-      generateCards(data.hits)
+      generateCards(data.hits);
     });
 }
 
 // function to display recipe (img, title and calories)
 function generateCards(results) {
-
-  var resultsDiv = document.querySelector('#card-append')
+  var resultsDiv = document.querySelector("#card-append");
   resultsDiv.textContent = "";
 
-  let generatedCards= '';
+  let generatedCards = "";
   //every time we are looping through the results, create a card using the format in the HTML
-  results.map(result => {
-    console.log(result)
-    generatedCards +=
-      `
+  results.map((result) => {
+    console.log(result);
+    generatedCards += `
 <div class="card column is-one-quarter">
       <div class="card-image">
         <figure class="image is-4by3">
@@ -47,7 +42,7 @@ function generateCards(results) {
           </div>
           <div class="media-content">
             <p class="title is-4">${result.recipe.label}</p>
-            <a href="http://localhost:3001/favorites"><img class="favoritesIcon" src="../images/star.svg"/>
+            <button id="fav"><img class="favoritesIcon" src="../images/star.svg"/></button>
           </div>
         </div>
     
@@ -57,19 +52,29 @@ function generateCards(results) {
          <strong> Calories: </strong>${result.recipe.calories.toFixed(0)}
          <br>
         
-         <a class="view-btn" target="_blank" href="${result.recipe.url}">View Recipe</a> 
+         <a class="view-btn" target="_blank" href="${
+           result.recipe.url
+         }">View Recipe</a> 
         </div>
       </div>
     </div>
-`
-})
-searchRecipe.innerHTML = generatedCards;
-};
+`;
+  });
+  searchRecipe.innerHTML = generatedCards;
+  const favButton = document.querySelector("#fav");
 
-const searchButton = document.querySelector('#search-2');
+  // activate search button
+  favButton.addEventListener("click", function (event) {
+    console.log("fav clicked");
+  });
+  
+}
+
+const searchButton = document.querySelector("#search-2");
 
 // activate search button
-searchButton.addEventListener("click", function(event){
-    event.preventDefault();
-    findApi(searchInput);
+searchButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  findApi(searchInput);
 });
+
