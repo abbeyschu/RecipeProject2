@@ -1,4 +1,4 @@
-loginFormHandler = async (event) => {
+const loginFormHandler = async (event) => {
   event.preventDefault();
 
   // Collect values from the login form
@@ -14,15 +14,15 @@ loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // If successful, redirect the browser to the profile page
-      document.location.replace('/profile');
+      // If successful, redirect the browser to the search page
+      document.location.replace('/search');
     } else {
       alert(response.statusText);
     }
   }
 };
 
-signupFormHandler = async (event) => {
+const signupFormHandler = async (event) => {
   event.preventDefault();
 
   const username = document.querySelector('#username-signup').value.trim();
@@ -45,7 +45,7 @@ signupFormHandler = async (event) => {
 };
 
 
-document.onload= function (){
+// document.onload= function (){
 
 document
   .querySelector('.login-form')
@@ -55,4 +55,4 @@ document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
 
-}
+// };

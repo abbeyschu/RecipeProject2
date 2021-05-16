@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS k24obm6xgrxrhqcc;
+CREATE DATABASE k24obm6xgrxrhqcc;

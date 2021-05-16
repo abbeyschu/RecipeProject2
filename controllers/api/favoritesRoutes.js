@@ -15,13 +15,8 @@ router.get('/', withAuth, async (req, res) => {
 router.post('/', withAuth, async (req, res) => {
     try {
       const newFavorites = await Favorites.create({
+        ...req.body,
         user_id: req.session.user_id,
-        label: req.body.label,
-        cuisineType: req.body.cuisineType,
-        calories: req.body.calories,
-        foodurl: req.body.foodurl,
-        comments: req.body.comments,
-        image: req.body.image,
       });
   
       res.status(200).json(newFavorites);
@@ -31,22 +26,22 @@ router.post('/', withAuth, async (req, res) => {
   });
 
 //   route to update comments
-  router.put('/:id', async (req, res) => {
-    try {
-      const commentData = await Favorites.update(
-      {
-        comments: req.body.comments,
-      },
-      {
-        where: {
-          id: req.params.id,
-        },
-      });
-      res.status(200).json(commentData);
-    } catch (err) {
-        res.status(500).json(err);
-      };
-  });
+  // router.put('/:id', async (req, res) => {
+  //   try {
+  //     const commentData = await Favorites.update(
+  //     {
+  //       comments: req.body.comments,
+  //     },
+  //     {
+  //       where: {
+  //         id: req.params.id,
+  //       },
+  //     });
+  //     res.status(200).json(commentData);
+  //   } catch (err) {
+  //       res.status(500).json(err);
+  //     };
+  // });
 
 //   route to delete a favorite
   router.delete('/:id', withAuth, async (req, res) => {
