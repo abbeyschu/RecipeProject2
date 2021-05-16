@@ -34,6 +34,7 @@ app.use(express.json());
 app.use(express.urlencoded ({extended:true}));
 app.use(routes);
 
+
 // Handlebars setting
 app.set('view engine', 'hbs');
 app.engine('hbs', exphbs({
