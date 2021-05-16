@@ -33,7 +33,7 @@ Favorites.init(
     foodurl: {
       type: DataTypes.STRING,
       allowNull: true,
-    }
+    },
     comments: {
       type: DataTypes.STRING,
       allowNull: true,
