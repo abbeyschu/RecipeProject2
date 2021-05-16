@@ -11,19 +11,6 @@ Favorites.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    label: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    comments: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    image: {
-      type: DataTypes.BLOB,
-      allowNull: false,
-    },
-    
     user_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -35,8 +22,12 @@ Favorites.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
-    idDrinkAPI: {
-      type: DataTypes.INTEGER,
+    cuisineType: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    calories: {
+      type: DataTypes.STRING,
       allowNull: true,
     },
     foodurl: {
@@ -48,7 +39,7 @@ Favorites.init(
       allowNull: true,
     },
     image: {
-      type: DataTypes.STRING,
+      type: DataTypes.BLOB,
       allowNull: true,
     },
   },

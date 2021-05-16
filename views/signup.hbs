@@ -1,3 +1,4 @@
+
     <section class="section">
          <link rel="stylesheet" href="/css/signup.css">
         <div class="container">
@@ -13,44 +14,50 @@
                             <h1 class="title is-1 pt-5">Yummy Corner</h1>
                             <h2 class="subtitle colored is-5 pt-5">Sign-Up Today To Store Your Favorite Recipes!</h2>
                             <p>Create an account below to store your favorite recipes to come back to and share with friends!</p>
+
  
-                            <p class="description mt-4" >All fields below are required.</p>
-                            <form>
-                                <div class="field">
-                                    <div class="control">
-                                        <input class="input is-medium" name="user_name" type="text"
-                                            placeholder="User Name">
-                                    </div>
+                        <p class="description mt-4" >All fields below are required.</p>
+                        <form class="signup-form">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input is-medium" name="user_name" type="text"
+                                            placeholder="User Name" id="username-signup">
                                 </div>
-                                <div class="field">
-                                    <div class="control">
-                                        <input class="input is-medium" type="email" placeholder="Email">
-                                    </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                        <input class="input is-medium" type="email" placeholder="Email" id="email-signup">
                                 </div>
-                                <div class="field">
-                                    <div class="control">
-                                        <input class="input is-medium" name="password" type="text"
-                                            placeholder="Password">
-                                    </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                        <input class="input is-medium" name="password" type="password"
+                                            placeholder="Password" id="password-signup">
                                 </div>
-                                <button class="button is-block is-black is-fullwidth is-medium">Sign Up</button>
-                                <small>
-                                    <p class="pt-4">Password Requirements:</p>
-                                <em><ul>
+                            </div>
+                            <button class="button is-block is-black is-fullwidth is-medium" onclick="signupFormHandler();">Sign Up</button>
+                            <small>
+                            <p class="pt-4">Password Requirements:</p>
+                            <em>
+                            <ul>
                                 <li>- Min of 8 characters</li>
                                 <li>- Min 1 upper case letter</li>
                                 <li>- Min 1 number</li>
                             </ul>
-                                <br />
-                              </em></small>
-                              <a href="/login">Log In</a> |
-                        <a href="/search">Home</a>
-                            </form>
-                        </div>
+                            <br/>
+                            </em>
+                            </small>
+                            <a href="/login">Log In</a> |
+                            <a href="/search">Home</a>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <script src="/js/background-images.js">
-    <script src="/js/login.js"></script>
+
+    </div>
+</section>
+
+<script src="/js/background-images.js"></script>
+<script src="/js/login.js" defer></script>
+
