@@ -4,11 +4,11 @@
         {{#if logged_in}}
         <a class="no-button">Log In</a>
         {{else}}
-        <a class="navbar-item" href="./login.hbs">
+        <a class="navbar-item" href="/login">
           Log In
         </a>
         {{/if}}
-        <a class="navbar-item" href="./signup.hbs">
+        <a class="navbar-item" href="/signup">
           Sign Up
         </a>
     
@@ -21,14 +21,14 @@
           <p class="subtitle"></p>
         </div>
         <div class="control">
-          <label class="radio">
+          {{!-- <label class="radio">
             <input id="foodCheck" type="radio" name="foobar">
             <strong>Food</strong>
           </label>
           <label class="radio">
             <input id="drinkCheck" type="radio" name="foobar" checked>
             <strong>Drink</strong>
-          </label>
+          </label> --}}
         </div>
         <div class="column is-5">
           <div class="field has-addons" id="topbar-search">
@@ -37,8 +37,8 @@
               <span class="icon is-left">
                 <i class="fas fa-search" aria-hidden="true"></i>
               </span>
-              <form id="searchHistory"> Search History</form>
-              <ul class="search-history"></ul>
+              {{!-- <form id="searchHistory"> Search History</form>
+              <ul class="search-history"></ul> --}}
             </div>
             <div class="control">
               <button class="button is-medium is-success" id="search-2">Search</button>
