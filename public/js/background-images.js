@@ -1,13 +1,14 @@
 
 
 var images = [
-"../images/background/bg1.jpeg",
+
 "../images/background/bg2.jpeg",
 "../images/background/bg3.jpeg",
 "../images/background/bg4.jpg",
 "../images/background/bg5.jpg",
-"../images/background/bg6.jpg"
-
+"../images/background/bg6.jpg",
+"../images/background/bg1.jpeg",
+"../images/background/bg7.jpg"
 ]
 
 
