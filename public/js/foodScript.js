@@ -42,7 +42,10 @@ function generateCards(results) {
           </div>
           <div class="media-content">
             <p class="title is-4">${result.recipe.label}</p>
+
             <button id="fav"><img class="favoritesIcon" src="../images/star.svg"/></button>
+
+
           </div>
         </div>
     
@@ -73,8 +76,10 @@ function generateCards(results) {
 const searchButton = document.querySelector("#search-2");
 
 // activate search button
+
 searchButton.addEventListener("click", function (event) {
   event.preventDefault();
   findApi(searchInput);
 });
+
 

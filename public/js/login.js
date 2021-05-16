@@ -1,5 +1,5 @@
 const loginFormHandler = async (event) => {
-  event.preventDefault();
+  // event.preventDefault();
 
   // Collect values from the login form
   const username = document.querySelector('#username-login').value.trim();
@@ -14,8 +14,8 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // If successful, redirect the browser to the profile page
-      document.location.replace('/profile');
+      // If successful, redirect the browser to the search page
+      document.location.replace('/search');
     } else {
       alert(response.statusText);
     }
@@ -23,7 +23,7 @@ const loginFormHandler = async (event) => {
 };
 
 const signupFormHandler = async (event) => {
-  event.preventDefault();
+  // event.preventDefault();
 
   const username = document.querySelector('#username-signup').value.trim();
   const email = document.querySelector('#email-signup').value.trim();
@@ -37,12 +37,13 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace('/search');
     } else {
       alert(response.statusText);
     }
   }
 };
+
 document
   .querySelector('#signup-form')
   .addEventListener("click", signupFormHandler);
@@ -50,4 +51,19 @@ document
 document
   .querySelector('#login-form')
   .addEventListener('click', loginFormHandler);
+
+
+
+
+// document.onload= function (){
+
+// document
+//   .querySelector('.login-form')
+//   .addEventListener('submit', loginFormHandler);
+
+// document
+//   .querySelector('.signup-form')
+//   .addEventListener('submit', signupFormHandler);
+
+// };
 
