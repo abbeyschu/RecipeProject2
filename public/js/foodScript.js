@@ -47,7 +47,7 @@ function generateCards(results) {
           </div>
           <div class="media-content">
             <p class="title is-4">${result.recipe.label}</p>
-            <img class="favoritesIcon" src="../images/star.svg"/>
+            <a href="http://localhost:3001/favorites"><img class="favoritesIcon" src="../images/star.svg"/>
           </div>
         </div>
     
