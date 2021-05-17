@@ -8,6 +8,12 @@ position:relative;
 width: 100%;
 
 }
+
+.favoritesIcon{
+height: 20px;
+width: 20px;
+
+}
 .navbar-end{
   display:flex;
 }
@@ -22,7 +28,7 @@ width: 100%;
     font-size: 22px;
     margin-left: 50px;
     margin-top: 50px;
-        opacity: .5;
+        /* opacity: .5; */
         transition: opacity .5s ease-out;
         -moz-transition: opacity .5s ease-out;
         -webkit-transition: opacity .5s ease-out;
@@ -35,7 +41,8 @@ width: 100%;
     }
     
     .card:hover {
-        opacity: 1;
+        /* opacity: .5; */
+        background-color: rgb(155, 181, 202);
     }
   
 
