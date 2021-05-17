@@ -11,6 +11,11 @@ width: 100%;
 .navbar-end{
   display:flex;
 }
+.logo{
+  width: 200px;
+  height: 150px;
+  object-position: right;
+}
 .card {
   
     font-family: 'Mandali', sans-serif;
