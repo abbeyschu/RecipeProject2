@@ -81,5 +81,3 @@ searchButton.addEventListener("click", function (event) {
   event.preventDefault();
   findApi(searchInput);
 });
-
-
