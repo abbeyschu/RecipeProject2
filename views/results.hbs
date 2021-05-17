@@ -1,39 +1,50 @@
   <link rel="stylesheet" href="/css/style.css">
  <section class="hero is-small is-primary is-bold">
    
-   <div id="navbarMenuHeroB" class="navbar-menu">
+   <div id="navbarMenuHeroB" class="navbar-menu is-mobile">
       <div class="navbar-end">
         {{#if logged_in}}
-        <a class="no-button">Log In</a>
+        <a class="navbar-item"id="logout">Log Out</a>
+        
+        <a class="navbar-item" href="/favorites">
+        Favorites
+        </a>
         {{else}}
         <a class="navbar-item" href="/login">
           Log In
         </a>
-        {{/if}}
+     
         <a class="navbar-item" href="/signup">
           Sign Up
         </a>
+           {{/if}}
     
       </div>
     </div>
     <div class="hero-body">
-      <div class="columns">
 
       
+      <div class="columns is-vcentered">
+    
+
         
 
+   
         </div>
-        <div class="column is-5"> --}}
+<
+        <div class="column is-5 is-mobile">
+
           <div class="field has-addons" id="topbar-search">
             <div class="control is expanded has-icons-left">
               <input class="input is-medium is-success" id="recipe-search-2" type="text" placeholder="Type here">
-              <span class="icon is-left">
+              <span class="icon is-right">
                 <i class="fas fa-search" aria-hidden="true"></i>
-              </span>
-
+          
+        </span>
             <div class="control">
               <button class="button is-medium is-success" id="search-2">Search</button>
             </div>
+              
             <div class="result-content">
               <ul class="list-item list-group-flush list">
               </ul>
@@ -41,9 +52,10 @@
           </div>
         </div>
       </div>
-        <div class="column is-5">
-          <p class="title-1"><img src="images/logo5.png"</p>
-                  </div>
+
+       <p class="title-1"><img class="logo" src="images/logo5.png"></p> 
+=======
+
   </section>
 
 <div id="result-content" class="result-content">
