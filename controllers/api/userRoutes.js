@@ -27,13 +27,12 @@ router.post('/', async (req, res) => {
       }
   
       const validPassword = await userData.checkPassword(req.body.password);
-      if (validPassword) {
-
-     
-        res
+      if (validPassword) {        
+         res
           .status(400)
           .json({ message: 'Incorrect password, please try again' });
         return;
+  
       }
   
       req.session.save(() => {
