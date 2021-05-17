@@ -19,26 +19,32 @@ router.get('/search', async (req, res) => {
     res.render('results');
 });
 
+router.get('/results', async (req, res) => {
+  res.render('results2');
+});
+
 
 // Use withAuth middleware to prevent access to route
-router.get('/favorites', withAuth, async (req, res) => {
-    try {
-      // Find the logged in user based on the session ID
-      const userData = await Users.findByPk(req.session.user_id, {
-        attributes: { exclude: ['password'] },
-        include: [{ model: Favorites }],
-      });
+router.get('/favorites', async (req, res) => {
+  res.render('favorites');
+});
+    // try {
+    //   // Find the logged in user based on the session ID
+    //   const userData = await Users.findByPk(req.session.user_id, {
+    //     attributes: { exclude: ['password'] },
+    //     include: [{ model: Favorites }],
+    //   });
   
-      const user = userData.get({ plain: true });
+    //   const user = userData.get({ plain: true });
   
-      res.render('favorites', {
-        ...user,
-        logged_in: true
-      });
-    } catch (err) {
-      res.status(500).json(err);
-    }
-  });
+      // res.render('favorites', {
+      //   // ...user,
+      //   // logged_in: true
+      // });
+  //   } catch (err) {
+  //     res.status(500).json(err);
+  //   }
+  // });
 
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route

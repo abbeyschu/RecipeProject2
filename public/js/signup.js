@@ -13,7 +13,7 @@ const signupFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/search');
+        document.location.replace('/results');
       } else {
         alert(response.statusText);
       }

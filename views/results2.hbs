@@ -1,0 +1,84 @@
+  <link rel="stylesheet" href="/css/style.css">
+ <section class="hero is-small is-primary is-bold">
+   
+   <div id="navbarMenuHeroB" class="navbar-menu is-mobile">
+      <div class="navbar-end">
+
+        <a class="navbar-item"id="logout" href="/search">Log Out</a>
+        
+        <a class="navbar-item" href="/favorites">
+        Favorites
+        </a>
+    
+      </div>
+    </div>
+    <div class="hero-body">
+
+      
+      <div class="columns is-vcentered">
+    
+
+        
+
+   
+        </div>
+
+        <div class="column is-5 is-mobile">
+
+          <div class="field has-addons" id="topbar-search">
+            <div class="control is expanded has-icons-left">
+              <input class="input is-medium is-success" id="recipe-search-2" type="text" placeholder="Type here">
+              <span class="icon is-right">
+                <i class="fas fa-search" aria-hidden="true"></i>
+          
+        </span>
+            <div class="control">
+              <button class="button is-medium is-success" id="search-2">Search</button>
+            </div>
+              
+            <div class="result-content">
+              <ul class="list-item list-group-flush list">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <p class="title-1"><img class="logo" src="images/logo5.png"></p> 
+
+  </section>
+
+<div id="result-content" class="result-content">
+    <div class="columns is-multiline" id="card-append">
+
+{{!-- {{#each}}
+<div class="card column is-one-quarter">
+        <div class="card-image">
+          <figure class="image is-4by3">
+          
+            <img src= "{{this.image}}" alt="Recipe Image">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+            </div>
+            <div class="media-content">
+              <p class="title is-4"></p>
+            </div>
+          </div>
+      
+          <div class="calories">
+          <strong> Cuisine Type:{{this.cuisineType}}</strong>
+          <br>
+           <strong> Calories:{{this.calories}} </strong>
+           <br>
+          
+           <a class="view-btn" target="_blank" href="{{this.url}}">View Recipe</a> 
+          </div>
+        </div>
+      </div>
+{{/each}} --}}
+    </div>
+</div>
+<script src="/js/foodScript.js"></script>
