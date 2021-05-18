@@ -9,7 +9,7 @@ Project was created using:
 - Express
 - Node
 - Sequelize
-- Lazard
+- Lozad
 
 # Installation
 Visit this link to view the app: https://recipe-search-project.herokuapp.com/
