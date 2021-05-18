@@ -9,10 +9,10 @@ Project was created using:
 - Express
 - Node
 - Sequelize
-
+- Lazard
 
 # Installation
-Visit this link to view the recipe finder: 
+Visit this link to view the app: https://recipe-search-project.herokuapp.com/
 
 # Instructions
 WHEN I enter a search input (example: lasagna)
@@ -33,6 +33,14 @@ THEN I am able to add Recipes to my "Favorites" list
 
 # Screenshots
 
+Sign-up Page:
+![Sign-up page screenshot](./public/images/signup.png)
+
+Log-in Page:
+![Log-in page screenshot](./public/images/login.png)
+
+Search Page:
+![Search page with results screenshot](./public/images/results.png)
 
 # Contributors
 - Abbey Schueller - https://github.com/abbeyschu
